@@ -73,8 +73,7 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 60vh;
+    height: 45vh;
 }
 .image-container figure{
     position: relative;
@@ -425,4 +424,20 @@ transform: rotateX(50deg);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.nav-bar{
+    width: 60px;
+}
+.fondo{
+    background-color: black;
+}
+.color-letter{
+    color: white;
+}
+.color-buttom-helpnavbar{
+    color: white;
+}
+.boot-form{
+    width: 50%;
 }
