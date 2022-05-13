@@ -1,0 +1,68 @@
+@import "variables/variables";
+@import "sass2/extend";
+@import "sass2/mixins";
+.faater{
+    @extend .header-footer;
+    grid-area: footer;
+    .fila-una{
+        text-align: center;
+        .blanco{
+            color: white;
+        }
+        .div-das{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+    .fila-das{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto auto;
+        margin-top: 4%;
+        .ladoimg {
+            vertical-align: top;
+        }
+        .cajayarriba{
+            display: flex;
+            flex-direction: column;
+            .arribaimg {
+                list-style: none;
+                .safe-secure{
+                    color: white;
+                    font-size: 25px;
+                }
+            }
+            .caja {
+                width: 150px;
+                list-style: none;
+                .caja1{
+                    width: 150px;
+                }
+            }
+        }
+        .xx {
+            margin: 15px 0;
+            font-size: 20px;
+            list-style-type: none;
+        }
+        .remove-circle{
+            list-style-type: none;
+            .red {
+                width: 100px;
+            }
+        }
+    }
+    .formulario {
+        margin: 2%;
+        padding: 2%;
+        color: white;
+        transition: all 2s;
+        text-align: center;
+    }
+    .previous-next{
+        @include flexibilizar-centrar;
+        a {
+            @include fuentes
+        }
+    }
+}

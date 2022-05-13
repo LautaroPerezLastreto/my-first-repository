@@ -1,0 +1,76 @@
+@import "../variables/variables";
+
+body{
+
+
+    @if $mobile == mobile{
+        // @media only screen and (max-width: 320px) {
+        //     .marcas {
+        //         width: 70px;
+        //     }
+        
+        //     .blanco {
+        //         font-size: small;
+        //     }
+        
+        //     .caja1 {
+        //         width: 70px;
+        //     }
+        
+        //     .arribaimg {
+        //         font-size: 20px;
+        //     }
+        
+        //     .blanco {
+        //         text-align: center;
+        //     }
+        //     .safe-secure{
+        //         font-size: 10px;
+        //     }
+        //     .logo{
+        //         margin-left: 0;
+        //         width: 80px;
+        //     }
+        //     .ladoimg{
+        //         font-size: 10px;
+        //     }
+        //     .list-icons{
+        //         display: flex;
+        //         flex-direction: column;
+        //         justify-content: space-between;
+        //     }
+        //     .cajayarriba{
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     justify-content: center;
+        //     }
+        //     .xx{
+        //         font-size: 8px;
+        //     }
+        // }
+    
+    }@else if $mobile-horizontal == mobile-horizontal{
+        // @media only screen and (max-width:480px) {
+        //     .marcas {
+        //         width: 100px;
+        //     }
+        
+        //     .blanco {
+        //         font-size: medium;
+        //     }
+        
+        //     .caja1 {
+        //         width: 100px;
+        //     }
+        
+        //     .red {
+        //         width: 75px;
+        //     }
+        // }
+    }
+
+
+
+
+}

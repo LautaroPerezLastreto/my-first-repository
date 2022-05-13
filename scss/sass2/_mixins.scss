@@ -1,0 +1,12 @@
+@import "../variables/variables";
+
+@mixin flexibilizar-centrar {
+    display: flex;
+    justify-content: space-around;
+}
+@mixin fuentes {
+    font-family: $tipo-de-letra;
+    line-height: 1,5;
+    font-style: italic;
+    font-weight: bold;
+}
