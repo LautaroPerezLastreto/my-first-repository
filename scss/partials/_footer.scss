@@ -58,6 +58,14 @@
         color: white;
         transition: all 2s;
         text-align: center;
+        .label::first-letter{
+            color: blanchedalmond;
+            font-size: medium;
+        }
+        input::selection{
+            background-color: red;
+            color: orangered;
+        }
     }
     .previous-next{
         @include flexibilizar-centrar;
