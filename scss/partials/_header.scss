@@ -1,6 +1,5 @@
 @import "variables/variables";
-@import "sass2/extend";
-@import "sass2/mixins";
+@import "../sass2/ext-op-cond-ap-mix";
 header{
     @extend .header-footer;
     margin: 0;

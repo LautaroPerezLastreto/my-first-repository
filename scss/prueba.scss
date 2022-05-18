@@ -2,11 +2,7 @@
 @import "partials/footer";
 @import "partials/main";
 @import "variables/variables";
-@import "sass2/condicionales";
-@import "sass2/extend";
-@import "sass2/maps";
-@import "sass2/operaciones";
-@import "sass2/mixins";
+@import "sass2/ext-op-cond-ap-mix";
 
 *{
     margin: 0;padding: 0;

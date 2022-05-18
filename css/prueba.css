@@ -5,12 +5,26 @@
 .main, .color {
   background-color: #BF9739; }
 
+.contact {
+  font-weight: bold;
+  font-size: 25px; }
+
+.list-contact-one {
+  font-weight: bold; }
+
+.neg {
+  font-weight: bold;
+  font-size: 12.5px;
+  text-align: center; }
+
 header {
   margin: 0;
   padding: 2%;
   border: solid black; }
   header .nav-bar {
     width: 60px; }
+  header .white {
+    color: white; }
   header .titulo {
     background-color: black;
     color: white;
@@ -56,6 +70,18 @@ header {
 .main, .color {
   background-color: #BF9739; }
 
+.contact {
+  font-weight: bold;
+  font-size: 25px; }
+
+.list-contact-one {
+  font-weight: bold; }
+
+.neg {
+  font-weight: bold;
+  font-size: 12.5px;
+  text-align: center; }
+
 .faater {
   grid-area: footer; }
   .faater .fila-una {
@@ -65,11 +91,12 @@ header {
     .faater .fila-una .div-das {
       display: flex;
       justify-content: space-evenly; }
+      .faater .fila-una .div-das .marcas {
+        width: 15%; }
   .faater .fila-das {
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto auto auto auto;
-    grid-template-areas: 1 2 3 4;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
     margin-top: 4%; }
     .faater .fila-das .ladoimg {
       vertical-align: top; }
@@ -85,7 +112,9 @@ header {
         width: 150px;
         list-style: none; }
         .faater .fila-das .cajayarriba .caja .caja1 {
-          width: 150px; }
+          width: 75%; }
+    .faater .fila-das .logo {
+      width: 50%; }
     .faater .fila-das .xx {
       margin: 2% 0;
       font-size: 100%;
@@ -94,7 +123,7 @@ header {
     .faater .fila-das .remove-circle {
       list-style-type: none; }
       .faater .fila-das .remove-circle .red {
-        width: 100px; }
+        width: 25%; }
   .faater .formulario {
     margin: 2%;
     padding: 2%;
@@ -122,6 +151,18 @@ header {
 
 .main, .color {
   background-color: #BF9739; }
+
+.contact {
+  font-weight: bold;
+  font-size: 25px; }
+
+.list-contact-one {
+  font-weight: bold; }
+
+.neg {
+  font-weight: bold;
+  font-size: 12.5px;
+  text-align: center; }
 
 body {
   margin: 0;
@@ -343,9 +384,7 @@ body {
   display: grid;
   gap: 10px;
   grid-template-columns: auto 400px;
-  grid-template-areas: "header header"
- "main sidebar"
- "footer footer";
+  grid-template-areas: "header header" "main sidebar" "footer footer";
   height: 100%; }
   .body-gaseosa .header-gaseosa {
     grid-area: header;
@@ -353,74 +392,37 @@ body {
   .body-gaseosa .aside-gaseosa {
     grid-area: sidebar;
     background-color: aquamarine; }
+    .body-gaseosa .aside-gaseosa .water {
+      font-size: 25px;
+      text-align: center;
+      font-weight: bold; }
+    .body-gaseosa .aside-gaseosa .singas {
+      width: 85%;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.75);
+      background-color: lightskyblue;
+      transition: all 1s; }
+      .body-gaseosa .aside-gaseosa .singas:hover {
+        background-color: lightblue; }
   .body-gaseosa .main-gaseosa {
     grid-area: main;
     background-color: #BF9739; }
+    .body-gaseosa .main-gaseosa .flex {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      align-items: center;
+      margin: 4% 0; }
+      .body-gaseosa .main-gaseosa .flex .gas {
+        width: 150px;
+        height: 150px;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.75);
+        background-color: beige;
+        transition: all 1s; }
+        .body-gaseosa .main-gaseosa .flex .gas:hover {
+          background-color: grey; }
   .body-gaseosa .footer-gaseosa {
     grid-area: footer;
     margin-top: 0; }
-
-@media screen and (max-width: 320px) {
-  .marcas {
-    width: 70px; }
-  .blanco {
-    font-size: small; }
-  .caja1 {
-    width: 70px; }
-  .arribaimg {
-    font-size: 20px; }
-  .blanco {
-    text-align: center; }
-  .safe-secure {
-    font-size: 10px; }
-  .logo {
-    margin-left: 0;
-    width: 80px; }
-  .ladoimg {
-    font-size: 10px; }
-  .list-icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-  .cajayarriba {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  .xx {
-    font-size: 8px; } }
-
-@media screen and (max-width: 480px) {
-  .marcas {
-    width: 100px; }
-  .blanco {
-    font-size: medium; }
-  .caja1 {
-    width: 100px; }
-  .red {
-    width: 75px; } }
-
-@media screen and (max-width: 650px) {
-  .caja1 {
-    width: 100px; }
-  .marcas {
-    width: 130px; }
-  .red {
-    width: 75px; }
-  .logo {
-    width: 120px; } }
-
-@media screen and (max-width: 900px) {
-  .caja1 {
-    width: 140px; }
-  .marcas {
-    width: 170px; }
-  .blanco {
-    font-size: medium; }
-  .red {
-    width: 75px; }
-  .logo {
-    width: 140px; } }
 
 .header-footer, header, .faater {
   background-color: black;
