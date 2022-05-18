@@ -1,0 +1,40 @@
+@import "../variables/variables";
+
+.header-footer{
+    background-color: $fondo-opaco;
+    width: $ancho;
+}
+.main{
+    background-color: $color-del-cuerpo;
+}
+
+$message: (
+    color: $negrita,
+    fSize: $size, 
+    list-style-type: $no,
+);
+
+.contact{
+    font-weight: map-get($message,color);
+    font-size: map-get($message,fSize);
+} 
+.list-contact-one{
+    font-weight: map-get($message,color);
+}
+
+@mixin flexibilizar-centrar {
+    display: flex;
+    justify-content: space-around;
+}
+@mixin fuentes {
+    font-family: $tipo-de-letra;
+    line-height: 1,5;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.neg{
+    font-weight: bold;
+    font-size: ($size/2);
+    text-align: $alinear-centro;
+}
