@@ -128,8 +128,16 @@ body {
         list-style-type: Decimal-leading-zero;
         font-size: large;
     }
+    .title-product{
+        font-size: 34px;
+        color: black;
+        font-weight: bolder;
+    }
 
     .title-sale {
+        font-size: 34px;
+        color: black;
+        font-weight: bolder;
         transform: skewY(3deg);
         background-color: white;
         width: 30%;
@@ -292,6 +300,9 @@ body {
 
     .h2-titles {
         margin-top: 25px;
+        font-size: 34px;
+        color: black;
+        font-weight: bolder;
 
         .gradient {
             background-image: linear-gradient(to right, white, red, blue, green, gold, white);
@@ -388,5 +399,122 @@ body {
     .footer-gaseosa {
         grid-area: footer;
         margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .caja1 {
+        width: 140px;
+    }
+
+    .marcas {
+        width: 170px;
+    }
+
+    .blanco {
+        font-size: medium;
+    }
+
+    .red {
+        width: 75px;
+    }
+
+    .logo {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .caja1 {
+        width: 100px;
+    }
+
+    .marcas {
+        width: 130px;
+    }
+
+    .red {
+        width: 75px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+    .footer-list-info{
+        font-size: 15px;
+    }
+    .safe-secure{
+        font-size: 18px;
+    }
+    .log{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .marcas {
+        width: 100px;
+    }
+    .footer-list-info{
+        display: none;
+    }
+    .blanco {
+        font-size: medium;
+    }
+
+    .caja1 {
+        width: 100px;
+    }
+
+    .red {
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .marcas {
+        width: 70px;
+    }
+
+    .blanco {
+        font-size: small;
+    }
+
+    .caja1 {
+        width: 70px;
+    }
+
+    .arribaimg {
+        font-size: 20px;
+    }
+
+    .blanco {
+        text-align: center;
+    }
+    .safe-secure{
+        font-size: 10px;
+    }
+    .logo{
+        margin-left: 0;
+        width: 80px;
+    }
+    .ladoimg{
+        font-size: 10px;
+    }
+    .list-icons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cajayarriba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .xx{
+        font-size: 8px;
     }
 }

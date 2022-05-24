@@ -35,24 +35,20 @@ header{
             position: static;
             text-align: center;
             justify-content: center;
+            }
         }
-        }
-        .menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            .blanc {
+        .blanc {
                 color: white;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
                 list-style-type: none;
+                flex-wrap: wrap;
                 .log {
                     width: 120px;
                     height: 120px;
                     border-radius: 50%;
                 }
             }
-        }
 }
