@@ -16,46 +16,91 @@
             }
         }
     }
+    
     .fila-das{
         display: grid;
         grid-template-rows: 100%;
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 33% 33% 33%;
         margin-top: 4%;
-        .ladoimg {
-            vertical-align: top;
-        }
-        .cajayarriba{
+        .center{
             display: flex;
-            flex-direction: column;
-            .arribaimg {
-                list-style: none;
-                .safe-secure{
-                    color: white;
-                    font-size: 25px;
-                }
-            }
-            .caja {
-                width: 150px;
-                list-style: none;
-                .caja1{
-                    width: 75%;
-                }
-            }
+            justify-content: center;
+            .fast-env{
+            width: 150px;
+            height: 100px;
         }
+        }
+        
+        .social-media {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .social-media .icon-media {
+        list-style: none;
+      }
+      
+      .social-media .icon-media .media-link {
+        width: 60px;
+        background-color: #fff;
+        text-align: center;
+        font-size: 35px;
+        margin: 0 10px;
+        display: block;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        border: 3px solid #fff;
+        z-index: 1;
+      }
+      
+      .social-media .icon-media .media-link .icon {
+        position: relative;
+        color: #262626;
+        transition: .5s;
+        z-index: 3;
+      }
+      
+      .social-media .icon-media .media-link:hover .icon {
+        color: #fff;
+        transform: rotateY(360deg);
+      }
+      
+      .social-media .icon-media .media-link:before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f00;
+        transition: .5s;
+        z-index: 2;
+      }
+      
+      .social-media .icon-media .media-link:hover:before {
+        top: 0;
+      }
+      
+      .social-media .icon-media:nth-child(1) a:before{
+        background: #3b5999;
+      }
+      
+      .social-media .icon-media:nth-child(2) a:before{
+        background: #55acee;
+      }
+      
+      .social-media .icon-media:nth-child(3) .media-link:before {
+        background: linear-gradient(45DEG, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+      }
+      
         .logo{
             width: 50%;
-        }
-        .xx {
-            margin: 2% 0;
-            font-size: 100%;
-            list-style-type: none;
-            color: white;
-        }
-        .remove-circle{
-            list-style-type: none;
-            .red {
-                width: 25%;
-            }
         }
     }
     .formulario {
