@@ -551,7 +551,7 @@ body {
   .color .centrar {
     text-align: center; }
   .color .bombay-bg {
-    background-image: url(/multimedia/imagenes/bombay-fondo.webp);
+    background-image: url(../multimedia/imagenes/bombay-fondo.webp);
     width: 90%;
     text-align: center;
     color: black;
